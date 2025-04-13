@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/homeStyle.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>   
+    <div class="month-1"> 
+        <div class="month-2">
+            <p class="month-choice">📅 Chọn tháng:</p>
+            <input class="choose-month" type="month" id="selectedMonth" value="2025-04">
+        </div>
+    </div>
+    <script>
+        const today = new Date();  
+        // Lấy năm và tháng, format thành "YYYY-MM"
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, '0'); // +1 vì tháng bắt đầu từ 0
+        
+        // Gán vào input
+        document.getElementById("selectedMonth").value = `${year}-${month}`;
+    </script>   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

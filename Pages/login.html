@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <p>🔐 Đăng nhập</p>
+        <form id="loginForm">
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Tên đăng nhập" >
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Mật khẩu" >
+            </div>
+            <button type="submit" class="login-btn">Đăng nhập</button>
+            <p id="loginMessage"></p> 
+        </form>
+        <div class="footer">
+            <p>Chưa có tài khoản? <a href="http://127.0.0.1:5500/Pages/register.html?">Đăng ký ngay</a></p>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

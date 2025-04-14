@@ -23,6 +23,7 @@ body{
 .account {
  display: flex;
  margin-top: 20px;
+ cursor: pointer;
 }
 
 img{
@@ -158,6 +159,7 @@ h1{
     color: white;
     font-weight: 400;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .footer{
@@ -223,6 +225,7 @@ h1{
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     display: none;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .dropdown button {
@@ -334,6 +337,7 @@ input {
     border: 1px solid #DEE2E6;
     width: 150px;
     background: #EFEFEF;
+    cursor: pointer;
 }
 
 
@@ -348,6 +352,7 @@ input {
     border: none;
     height: 42px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .history {

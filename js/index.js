@@ -374,9 +374,9 @@ const amount = amountInput.value.trim();
 const selectedCategory = categorySelect.value;
 const note = noteInput.value.trim();
 
-if (amount === "" || selectedCategory === "") {
+if (amount === "" || selectedCategory === "" || amount  < 0) {
     Swal.fire({
-        title: "Số tiền hoặc tên danh mục không được để trống",
+        title: "Số tiền hoặc tên danh mục không hợp lệ",
         icon: "error"
     });
     return;

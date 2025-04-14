@@ -135,13 +135,14 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        if(!limit){
+         if(!limit || limit < 0 ){
             Swal.fire({
-                title: "Giới hạn không được để trống",
+                title: "Giới hạn không hợp lệ",
                 icon: "error"
             });
             return; 
         }
+
 
         const totalCurrent = data.categories.reduce((sum, cat, index) => {
             if (index === editIndex) return sum;
